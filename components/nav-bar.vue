@@ -11,4 +11,8 @@
   </b-navbar>
 </template>
 
-<script></script>
+<style>
+.nuxt-link-exact-active {
+  border-bottom: 5px solid #07eb3c;
+}
+</style>
