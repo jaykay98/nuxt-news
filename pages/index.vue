@@ -5,8 +5,12 @@
 </template>
 
 <script>
-
 export default {
   name: 'IndexPage',
+  head() {
+    return {
+      title: 'News with Nuxt - Home',
+    }
+  },
 }
 </script>

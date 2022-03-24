@@ -4,29 +4,15 @@
     <div class="container column is-10 is-fullhd">
       <Nuxt />
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
 import NavBar from '../components/nav-bar.vue'
+import Footer from '../components/footer.vue'
 export default {
   name: 'DefaultLayout',
-  components: { NavBar },
-  data() {
-    return {
-      items: [
-        {
-          title: 'Home',
-          icon: 'home',
-          to: { name: 'index' },
-        },
-        {
-          title: 'Inspire',
-          icon: 'lightbulb',
-          to: { name: 'inspire' },
-        },
-      ],
-    }
-  },
+  components: { NavBar, Footer },
 }
 </script>

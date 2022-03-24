@@ -7,3 +7,13 @@
     </p>
   </div>
 </template>
+
+<script>
+export default {
+  head() {
+    return {
+      title: 'News with Nuxt - About Us',
+    }
+  },
+}
+</script>
