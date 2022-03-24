@@ -1,14 +1,17 @@
 <template>
   <div>
-      <div class="container column is-10">
-        <Nuxt />
-      </div>
+    <NavBar />
+    <div class="container column is-10">
+      <Nuxt />
+    </div>
   </div>
 </template>
 
 <script>
+import NavBar from '../components/nav-bar.vue'
 export default {
   name: 'DefaultLayout',
+  components: { NavBar },
   data() {
     return {
       items: [
