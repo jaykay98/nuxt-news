@@ -1,7 +1,7 @@
 <template>
   <div>
     <NavBar />
-    <div class="container column is-10">
+    <div class="container column is-10 is-fullhd">
       <Nuxt />
     </div>
   </div>

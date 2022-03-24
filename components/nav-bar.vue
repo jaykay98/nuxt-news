@@ -5,7 +5,7 @@
         <NuxtLink to="/">Home</NuxtLink>
       </b-navbar-item>
       <b-navbar-item>
-        <NuxtLink to="/about">About</NuxtLink>
+        <NuxtLink to="/about-us">About</NuxtLink>
       </b-navbar-item>
     </template>
   </b-navbar>
