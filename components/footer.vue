@@ -16,3 +16,6 @@ export default {
   name: 'FooterItem',
 }
 </script>
+
+<style>
+</style>

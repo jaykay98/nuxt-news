@@ -1,7 +1,7 @@
 <template>
   <div>
     <NavBar />
-    <div class="container column is-10 is-fullhd">
+    <div class="container is-fullhd">
       <Nuxt />
     </div>
     <Footer />
@@ -16,3 +16,11 @@ export default {
   components: { NavBar, Footer },
 }
 </script>
+
+<style>
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+</style>
