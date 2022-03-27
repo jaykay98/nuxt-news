@@ -15,10 +15,10 @@
       <header class="card-header">
         <p class="card-header-title is-centered title">{{ article.title }}</p>
       </header>
-      <div class="card-image is-centered">
+      <div class="card-image has-text-centered">
         <img
           :src="article.urlToImage"
-          width="100%"
+          width="50%"
           alt="An image of the news article content"
         />
       </div>
@@ -26,8 +26,8 @@
         <div class="content has-text-weight-medium">
           {{ article.description }}
         </div>
-        <div class="content has-text-weight-semibold">
-          <time>{{ article.publishedAt }}</time>
+        <div class="content has-text-weight">
+          <time class="datetime">{{ article.publishedAt }}</time>
           <footer class="card-footer">
             <a :href="article.url" target="_blank" class="card-footer-item"
               >Open in New Tab</a
@@ -79,5 +79,10 @@ export default {
 <style>
 .card {
   border: 3px solid #05f519;
+}
+
+.datetime {
+  color: black;
+  font-style: italic;
 }
 </style>
