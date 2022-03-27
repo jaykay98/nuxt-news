@@ -1,9 +1,18 @@
 <template>
   <div>
-    <h1 class="title has-text-centered">About Us</h1>
-    <p class="subtitle has-text-centered">
+    <h1 class="title has-text-centered has-text-white">About Us</h1>
+    <p class="subtitle has-text-centered has-text-white">
       The latest Australian news brought to you by
-      <a href="https://newsapi.org/" target="_blank">News API</a>
+      <a
+        href="https://newsapi.org/"
+        target="_blank"
+        class="
+          news-api-link
+          has-text-white has-text-weight-semibold
+          is-underlined
+        "
+        >News API</a
+      >
     </p>
   </div>
 </template>
