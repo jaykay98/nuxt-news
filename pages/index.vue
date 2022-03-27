@@ -23,12 +23,11 @@
         />
       </div>
       <div class="card-content">
-        <div class="content">
+        <div class="content has-text-weight-medium">
           {{ article.description }}
         </div>
-        <div class="content">
-          <time>{{ article.publishedAt.toLocaleString() }}</time>
-
+        <div class="content has-text-weight-semibold">
+          <time>{{ article.publishedAt }}</time>
           <footer class="card-footer">
             <a :href="article.url" target="_blank" class="card-footer-item"
               >Open in New Tab</a
@@ -51,7 +50,23 @@ export default {
   async fetch() {
     this.newsArticles = await fetch(
       `https://newsapi.org/v2/top-headlines?country=au&apiKey=${process.env.NUXT_ENV_NEWS_API_KEY}`
-    ).then((res) => res.json())
+    )
+      .then((res) => {
+        return res.json()
+      })
+      .then((response) => {
+        response.articles.forEach((article) => {
+          article.publishedAt = new Date(article.publishedAt).toLocaleString(
+            'en-AU',
+            {
+              localeMatcher: 'best fit',
+              timeZoneName: 'short',
+            }
+          )
+        })
+        this.newsArticles = response
+        return response
+      })
   },
   head() {
     return {
@@ -60,3 +75,9 @@ export default {
   },
 }
 </script>
+
+<style>
+.card {
+  border: 3px solid #05f519;
+}
+</style>
