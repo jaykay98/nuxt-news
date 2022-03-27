@@ -18,6 +18,9 @@ export default {
 </script>
 
 <style>
+body {
+  background-color: #3e32a8;
+}
 .container {
   display: flex;
   min-height: 100vh;
