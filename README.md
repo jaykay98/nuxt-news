@@ -1,5 +1,7 @@
 # nuxt-news
 
+Live demo at: https://nuxtnewsaus.netlify.app/
+
 ## Build Setup
 
 ```bash
