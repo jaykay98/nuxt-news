@@ -1,5 +1,10 @@
 <template>
   <b-navbar centered fixed-top mobile-burger close-on-click shadow spaced>
+    <template #brand>
+      <b-navbar-item>
+        <a href="/">NEWS WITH NUXT</a>
+      </b-navbar-item>
+    </template>
     <template #start>
       <b-navbar-item>
         <NuxtLink to="/">Home</NuxtLink>
